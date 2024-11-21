@@ -1,0 +1,299 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Gray Background */
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Navbar background set to white */
+    color: black; /* Navbar text color */
+    padding: 15px 40px; /* Adjusted padding for better spacing */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; /* Ensures even spacing between items */
+    flex: 1;
+  }
+  
+  .navbar nav ul li {
+    margin: 0 15px; /* Adjusted spacing between items */
+  }
+  
+  .navbar nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #00BFFF; /* Brighter Blue on hover */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 20px; /* Adjusted gap for proper button spacing */
+  }
+  
+  .auth-buttons button {
+    background-color: #00BFFF; /* Bright Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #008CBA; /* Slightly darker blue for hover */
+  }
+  
+  .home-section {
+    padding: 120px 50px 50px 50px;
+    text-align: center;
+    background-color: white; /* White background for clean contrast */
+  }
+  
+  .home-section .home-text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .home-section h1 {
+    font-size: 36px;
+    color: #5e90ee; /* Dark Blue */
+  }
+  
+  .home-section p.sub-tagline {
+    font-size: 20px;
+    color: black; /* Tagline in black */
+    margin-top: 10px;
+  }
+  
+  .home-section p.sub-tagline .highlight {
+    color: #00BFFF; /* Brighter Blue color for 'Human Body' */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+ 
+  
+ 
+  
+  .intro-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .interactive-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #ffffff; /* White Background */
+  }
+  
+  .features-left {
+    flex: 1;
+    text-align: left; /* Ensure the text aligns to the left */
+  }
+  
+  .features-left h2 {
+    font-size: 36px; /* Increased size */
+    color: #00BFFF; /* Bright Blue */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+    line-height: 1.3; /* Slightly tighter line height for improved readability */
+  }
+  
+  .features-right {
+    flex: 2;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    max-width: 600px; /* Restrict text width */
+  }
+  
+  .features-right p {
+    line-height: 1.6;
+  }
+  /* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%; /* Each card will take 30% of the width */
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    color: #1f3a6e; /* Dark blue for the heading */
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #666;
+    margin: 15px 0;
+  }
+  
+  .card button {
+    background-color: #5e90ee; /* Blue color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #4b80cc; /* Darker blue on hover */
+  }
+  
+  /* Media Queries for Small Screens */
+  @media screen and (max-width: 768px) {
+    .cards-section {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .card {
+      width: 90%; /* Cards will take 90% of the screen width on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .card h3 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .card p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .card button {
+      font-size: 14px; /* Adjust button size */
+    }
+  }
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    section div {
+      text-align: center;
+    }
+  }
+  
+  
+  .systems-section {
+    padding: 100px 50px;
+    background-color: #ffffff; /* White Background */
+    text-align: center;
+  }
+  
+  .systems-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #00BFFF; /* Brighter Blue */
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .view-button {
+    padding: 10px 20px;
+    background-color: #00BFFF; /* Bright Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #008CBA; /* Slightly darker blue for hover */
+  }
+  
+  .quiz-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333; /* Black Footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  
+  

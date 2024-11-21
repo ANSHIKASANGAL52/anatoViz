@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnatoViz - Human Anatomy Exploration</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/OrbitControls.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <img src="logo_anatoviz.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#systems">Explore Systems</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button onclick="window.location.href='#get-started'">Get Started</button>
+        <button onclick="window.location.href='#signup'">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-text">
+      <h1 class="animated-text">Explore the <span class="Highlight">Human Body</span> Like Never Before</h1>
+      <p class="sub-tagline">Dive into a revolutionary way of learning anatomy with our interactive 3D models. Zoom, rotate, and explore the human body in detail.</p>
+    </div>
+    <div class="intro-image">
+      <img src="human pic.jpg" alt="Human Body" />
+    </div>
+    <div class="interactive-features">
+        <div class="features-left">
+          <h1>Explore Our Interactive Anatomy Features</h1>
+        </div>
+        <div class="features-right">
+          <p>
+            Discover the innovative features of AnatoViz that make learning human anatomy engaging and interactive. Our platform offers clickable body parts, dynamic quizzes, and detailed organ-specific information to enhance your understanding and retention of complex anatomical concepts.
+          </p>
+        </div>
+      </div>
+  </section>
+  <div class="cards-section">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="3dmodel.jpg" alt="Card Image 1">
+      <h3>3D Models</h3>
+      <p>Explore the intricate network of muscles in the human body, their function, and how they work together.</p>
+      <button>Learn More</button>
+    </div>
+  
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="quiz.webp" alt="Card Image 2">
+      <h3>Interactive quizes</h3>
+      <p>Test your knowledge with our interactive quizzes designed to challenge and reinforce your understanding of human anatomy. Perfect for self-assessment.</p>
+      <button>Learn More</button>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="info'.webp" alt="Card Image 3">
+      <h3>Organ Specific Information</h3>
+      <p>Dive deep into organ-specific details with our comprehensive 3D models. Learn about the structure and function of each organ in an engaging way.
+    </p>
+      <button>Learn More</button>
+    </div>
+  </div>
+  <!-- Explore Human Anatomy Section -->
+<section style="display: flex; align-items: center; justify-content: center; margin: 50px 0; padding: 20px;">
+ 
+  <div style="flex: 1; padding: 20px; text-align: right;">
+    <h2 style="font-size: 36px; font-weight: bold; color: black;">Explore Human Anatomy in 3D</h2>
+  </div>
+  <div style="flex: 1; padding: 20px; text-align: left;">
+    <p style="font-size: 18px; color: #333;">
+      Dive into the intricacies of the human body with our interactive 3D models. Experience anatomy like never before with zoom and rotate features, allowing you to explore various systems in detail.
+    </p>
+  </div>
+</section>
+
+<!-- Full-Width Image -->
+<div style="width: 100%; margin-top: 30px;">
+  <img src="img.webp" alt="Explore Anatomy in 3D" style="width: 100%; height: auto;" />
+</div>
+
+  
+
+  <!-- Anatomy Systems Section -->
+  <section id="systems" class="systems-section">
+    <h1>Explore Human Anatomy Systems</h1>
+    <div class="systems-cards">
+      <div class="card">
+        <h3>Muscular System</h3>
+        <p>A system that gives the body movement, posture, and heat regulation.</p>
+        <button class="view-button" onclick="loadModel('muscle')">View 3D Model</button>
+      </div>
+      <div class="card">
+        <h3>Skeletal System</h3>
+        <p>The system that supports and protects the body, composed of bones and joints.</p>
+        <button class="view-button" onclick="loadModel('skeleton')">View 3D Model</button>
+      </div>
+      <div class="card">
+        <h3>Circulatory System</h3>
+        <p>Transports blood, nutrients, gases, and wastes through the body.</p>
+        <button class="view-button" onclick="loadModel('circulatory')">View 3D Model</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About AnatoViz</h2>
+    <p>AnatoViz is an interactive platform to explore the human body's systems and structures in 3D, enhancing learning for medical students and professionals.</p>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="quiz-section">
+    <h2>Test Your Knowledge</h2>
+    <p>Take the quiz to test your understanding of human anatomy!</p>
+    <button onclick="window.location.href='#quiz-start'">Start Quiz</button>
+  </section>
+  
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 AnatoViz. All Rights Reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
+
